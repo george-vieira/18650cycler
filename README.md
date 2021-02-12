@@ -3,13 +3,17 @@
 ## Install
 
 sudo apt-get update
-sudo apt-get -y install python3 python3-venv
-sudo python3 -mpip upgrade
 
-tar xvfz cycler2ui.tgz
+sudo apt-get -y install python3 python3-venv
+
+python3 -mpip upgrade
+
+python3 -mvenv cycler2ui
+
 cd cycler2ui
 
-python3 -mvenv .
+tar xvfz cycler2ui.tgz
+
 ./bin/python3 -mpip install -r requirements.txt
 
 ## Run
